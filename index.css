@@ -1,115 +1,99 @@
 body,
 .row {
 	background-color: #121212;
-  overflow-y: scroll;
-  overflow-x: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	height: 120vh;
 	width: 100vw;
 }
-#short
-{
-  height: 10%;
+#short {
+	height: 10vh;
+	overflow: hidden;
 }
-#logos
-{
-  display: block;
-    margin-left: auto;
-    margin-right: auto
+#logos {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
-.bs-example{
-  margin: 10%;
+.bs-example {
+	margin: 10%;
 }
-
 
 .bg-black {
-    background-color:white;
+	background-color: white;
 }
-.container-fluid1{
-  padding: 3% 20%;
-  text-align: center;
+.container-fluid1 {
+	padding: 3% 20%;
+	text-align: center;
 }
 #white-section {
-  background-color: black;
-  color: white;
-  margin-top: 0px !important;
+	background-color: black;
+	color: white;
+	margin-top: 0px !important;
 }
 
 .social-icon {
-  margin: 30px 10px;
-color:white;
+	margin: 30px 10px;
+	color: white;
 }
 
-
-
-
 .navbar-brand {
-    padding-left: 10%;
-    font-size: 20px;
-    
-    text-align: center;
+	padding-left: 10%;
+	font-size: 20px;
+
+	text-align: center;
 }
 
 .navbar-nav {
-    width: 100%;
-    
+	width: 100%;
 }
 
 .nav-item {
-    padding: 6px 14px;
-    text-align: center;
+	padding: 6px 14px;
+	text-align: center;
 }
-
-
 
 .navbar-collapse.collapse.in {
-    display: block !important
+	display: block !important;
 }
 span {
-    vertical-align:middle;
+	vertical-align: middle;
 }
-.nm 
-{
-    text-align: center;
-   
-    margin-right: 20%;
-    margin-left: 140%;
+.nm {
+	text-align: center;
 
+	margin-right: 20%;
+	margin-left: 140%;
 }
-.container-fluid1{
-  padding: 3% 20%;
-  text-align: center;
+.container-fluid1 {
+	padding: 3% 20%;
+	text-align: center;
 }
 .white-section {
-  background-color: black;
-  color: white;
-  margin-top: 0px !important;
+	background-color: black;
+	color: white;
+	margin-top: 0px !important;
 }
 
 .social-icon {
-  margin: 30px 10px;
+	margin: 30px 10px;
 }
+
 @media only screen and (max-width: 800px) {
-  
-  .nm
-  {
-    
-    margin-right: 40%;
-    margin-left: 40%;
-  }
+	.nm {
+		margin-right: 40%;
+		margin-left: 40%;
+	}
+	.container-fluid1 {
+		padding: 3% 10%;
+	}
 }
-@media only screen and (min-device-width : 770px) 
-and (max-device-width : 980px {
-  .nm
-  {
-    
-    margin-right: 50%;
-    
-  }
-} 
+@media only screen and (min-device-width: 770px) and {
+	.nm {
+		margin-right: 50%;
+	}
+}
 
-
-#sum
-{
-    height: 80%;
-    
+#sum {
+	height: 100%;
 }

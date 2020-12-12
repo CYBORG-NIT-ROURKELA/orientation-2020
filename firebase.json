@@ -1,0 +1,36 @@
+{
+	"hosting": {
+		"public": "",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"redirects": [
+			{
+				"source": "/index.*",
+				"destination": "/",
+				"type": 301
+			},
+			{
+				"source": "/signIn.*",
+				"destination": "/signIn",
+				"type": 301
+			},
+			{
+				"source": "/orientation.*",
+				"destination": "/orientation",
+				"type": 301
+			},
+			{
+				"source": "/**",
+				"destination": "/",
+				"type": 301
+			}
+		],
+		"rewrites": [
+			{
+				"source": "/",
+				"destination": "/index.html"
+			}
+		],
+		"cleanUrls": true,
+		"trailingSlash": false
+	}
+}
