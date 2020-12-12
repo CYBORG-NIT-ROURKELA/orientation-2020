@@ -85,6 +85,7 @@ body {
   clear: both;
 }
 
+
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
@@ -121,7 +122,7 @@ body {
   padding: 3% 20%;
   text-align: center;
 }
-.white-section {
+#white-section {
   background-color: black;
   color: white;
   margin-top: 0px !important;
