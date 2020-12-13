@@ -1,3 +1,4 @@
+const analytics = firebase.analytics();
 const remoteConfig = firebase.remoteConfig();
 remoteConfig.settings.minimumFetchIntervalMillis = 1200000;
 remoteConfig.defaultConfig = {
