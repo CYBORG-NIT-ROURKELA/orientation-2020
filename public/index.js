@@ -10,7 +10,6 @@ remoteConfig
 		const val = remoteConfig.getValue("orientation_status").asNumber();
 		switch (val) {
 			case 0:
-				if (window.location.pathname != "/comingSoon") window.location = "/comingSoon";
 				break;
 			case 2:
 				if (window.location.pathname != "/thankYou") window.location = "/thankYou";
