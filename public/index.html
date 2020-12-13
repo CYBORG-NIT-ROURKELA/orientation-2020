@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Loading... | Orientation 2020 | Cyborg</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-		<!-- Favicon and touch icons -->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<title>Orientation 2020 | Cyborg</title>
 
+		<!-- CSS -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600" />
 		<link
 			rel="stylesheet"
@@ -22,6 +21,10 @@
 
 		<link rel="stylesheet" href="comingSoon.css" />
 
+		<!-- Favicon and touch icons -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
 		<script src="/__/firebase/8.1.2/firebase-app.js"></script>
 		<!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -31,6 +34,7 @@
 		<script src="/__/firebase/8.1.2/firebase-remote-config.js"></script>
 		<script defer src="index.js"></script>
 	</head>
+
 	<body>
 		<div class="bgimg">
 			<div class="topleft">
@@ -39,6 +43,32 @@
 			<div class="middle">
 				<h2 id="lol">Cyborg Orientation 2k20</h2>
 				<hr />
+
+				<div class="row">
+					<div class="column">
+						<div class="card">
+							<h3 id="days"></h3>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="card">
+							<h3 id="hours"></h3>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="card">
+							<h3 id="mins"></h3>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="card">
+							<h3 id="sec"></h3>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -111,6 +141,7 @@
 
 			<!-- Copyright -->
 		</footer>
+		<!-- Footer -->
 
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -128,5 +159,36 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script>
+			var countDownDate = new Date("Dec 20, 2020 18:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function () {
+				// Get today's date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Output the result in an element with id="demo"
+				document.getElementById("days").innerHTML = days + "d ";
+				document.getElementById("hours").innerHTML = hours + "h ";
+				document.getElementById("mins").innerHTML = minutes + "m ";
+				document.getElementById("sec").innerHTML = seconds + "s ";
+
+				// If the count down is over, write some text
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
 	</body>
 </html>
