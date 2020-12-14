@@ -6,6 +6,12 @@ body,
 	height: 120vh;
 	width: 100vw;
 }
+#interact-div {
+	overflow: hidden;
+}
+#interact-div > iframe {
+	overflow: auto;
+}
 #short {
 	height: 10vh;
 	overflow: hidden;
