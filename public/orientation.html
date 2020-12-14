@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Orientation 2020 | 2020</title>
+		<title>Orientation 2020 | Cyborg</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -27,8 +27,11 @@
          https://firebase.google.com/docs/web/setup#available-libraries -->
 		<script src="/__/firebase/8.1.2/firebase-analytics.js"></script>
 		<!-- Initialize Firebase -->
+		<script src="/__/firebase/8.1.2/firebase-firestore.js"></script>
+		<script src="/__/firebase/8.1.2/firebase-auth.js"></script>
 		<script src="/__/firebase/init.js"></script>
-		<script defer src="index.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 		<link href="orientation.css" rel="stylesheet" />
 	</head>
 	<body class="container-fluid p-0 m-0">
@@ -46,20 +49,53 @@
 					id="youtube-frame"
 					width="100%"
 					height="100%"
-					src="https://www.youtube.com/embed/ffc-FIwGcu0"
+					src="https://www.youtube.com/embed/vwqR8CFElgQ?start=877"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
 				></iframe>
 			</div>
-			<div class="col-md-4 col-sm-12 m-0 p-0" id="interact-div">
+			<div class="col-md-4 col-sm-12 m-0 p-0" id="sign-in-div">
+				<p
+					id="sign-in-text"
+					style="color: whitesmoke; padding: 5px; margin: 10px; font-size: 1em; text-align: center"
+					hidden
+				>
+					Please sign in using your Official NIT Rourkela Microsoft Teams Account to access this section.<br />The mail
+					ID will be in the format rollNumber@nitrkl.ac.in
+				</p>
+				<i
+					id="loader-spinner"
+					class="fas fa-spinner fa-spin"
+					style="color: white; font-size: 3em; align-items: center; align-self: center; text-align: center"
+				></i>
+			</div>
+			<div class="col-md-4 col-sm-12 m-0 p-0" id="interact-div" hidden>
 				<iframe
-					id="interact-frame"
+					id="interact-frame0"
 					src="https://app.sli.do/event/lflkcy0p"
 					id="sum"
 					frameborder="0"
 					width="100%"
 					height="100%"
+				></iframe>
+				<iframe
+					id="interact-frame1"
+					src="https://www.menti.com/eeepjkvbgt"
+					id="sum"
+					frameborder="0"
+					width="100%"
+					height="100%"
+					hidden
+				></iframe>
+				<iframe
+					id="interact-frame2"
+					src="https://www.menti.com/srm7jxv6hj"
+					id="sum"
+					frameborder="0"
+					width="100%"
+					height="100%"
+					hidden
 				></iframe>
 			</div>
 		</div>
