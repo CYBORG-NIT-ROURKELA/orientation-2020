@@ -4,7 +4,7 @@ let youtubeURL = "https://www.youtube.com/embed/ffc-FIwGcu0",
 	menti2URL = "https://www.menti.com/srm7jxv6hj",
 	currentMode = 0;
 const firestore = firebase.firestore();
-const ubsub = firestore
+const unsub = firestore
 	.collection("websiteData")
 	.doc("orientationPage")
 	.onSnapshot((doc) => {
