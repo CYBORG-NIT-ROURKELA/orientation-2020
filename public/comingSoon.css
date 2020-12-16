@@ -136,3 +136,13 @@ body {
 		height: 100%;
 	}
 }
+@media screen and (max-width: 400px) {
+	#logos
+	{
+		height: 30px;
+	}
+	.middle
+	{
+      top: 41%;
+	}
+}
