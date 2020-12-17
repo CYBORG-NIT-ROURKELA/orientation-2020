@@ -132,11 +132,17 @@ body {
 		margin-top: 30%;
 		top: 40%;
 	}
+	#sumq
+	{
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
 	#short {
 		height: 10%;
 	}
 	#white-section {
 		height: auto;
+
 	}
 	.bgimg {
 		height: 100%;
@@ -147,8 +153,26 @@ body {
 	{
 		height: 30px;
 	}
+	#sumq
+	{
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
 	.middle
 	{
-      top: 41%;
+      top: 44%;
+	}
+	.sub
+	{
+		margin-bottom: 45px;
 	}
 }
+
+
+	#sumq
+	{
+		margin-top: 20px;
+	}
+	
+	
+ 
