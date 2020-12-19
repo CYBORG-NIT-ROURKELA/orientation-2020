@@ -1,7 +1,7 @@
-let youtubeURL = "https://www.youtube.com/embed/vwqR8CFElgQ?start=877",
-	slidoURL = "https://app.sli.do/event/lflkcy0p",
-	menti1URL = "https://www.menti.com/eeepjkvbgt",
-	menti2URL = "https://www.menti.com/srm7jxv6hj",
+let youtubeURL = "https://player.twitch.tv/?channel=cyborgnitr&parent=cyborgnitr.tech",
+	slidoURL = "https://app.sli.do/event/5esgpdzv/live/questions",
+	menti1URL = "https://www.menti.com/fjxs9ph3gv",
+	menti2URL = "https://www.menti.com/pxfq6x19ja",
 	currentMode = 0,
 	currentUser = null;
 
